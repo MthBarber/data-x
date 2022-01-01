@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display:flex;
+    height: 33vh;
+    width: 100vw;
+}
+.middle {
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    background-image: url(://images.unsplash.com/photo-1602300991431-27a957a5bcf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Z29pbmclMjBncmVlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: repeat;
+}
+
+.footer {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+}
