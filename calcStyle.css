@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: rgb(66, 66, 66);
 }
 
 .container {
@@ -9,16 +14,31 @@
 }
 
 .top {
-    display:flex;
+    display:flex;    
+    flex-direction: column;
+    text-align: center;
     height: 33vh;
     width: 100vw;
+    color: whitesmoke;
+}
+
+h1 {
+    padding-bottom: 3.2rem;
+}
+
+span {
+    color: green;
+}
+
+.text-content {
+    font-size: 1.2rem;
 }
 .middle {
     display: flex;
     height: 60vh;
     width: 100vw;
-    background-image: url(://images.unsplash.com/photo-1602300991431-27a957a5bcf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Z29pbmclMjBncmVlbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-    background-repeat: repeat;
+    background-image: url(https://media.istockphoto.com/photos/green-computing-green-technology-green-it-csr-and-it-ethics-concept-picture-id1315096305?b=1&k=20&m=1315096305&s=170667a&w=0&h=UQw9-GkbCFtwjlfEEf0vPG1ZDJxmH_qPr2jXdoxIzQk=);
+    background-repeat: no-repeat;
 }
 
 .footer {
