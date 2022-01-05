@@ -15,10 +15,9 @@ const passengers = document.getElementById('passengers').value;
 })
 
 const calculateFunction = (distance,fuelType,passengers) =>{
+    const formOutput = document.getElementsByClassName("formOutput");
     let emissions = distance  / passengers;
-        console.log(typeof(distance));
-        console.log("distance is..." + distance)
-        console.log(emissions);
-        let intEmissions = parseInt(emissions)
-    return console.log(emissions) + console.log(intEmissions);
+    leaderboard.push(emissions);
+    leaderboard.sort();
+    return console.table(leaderboard) + console.log(emissions);
 }
