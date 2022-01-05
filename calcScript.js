@@ -17,12 +17,15 @@ const passengers = document.getElementById('passengers').value;
 
 const calculateFunction = (distance,vehicle,passengers) =>{     
     let formOutput = document.getElementById("formOutput");
-    let emissions = ((distance * vehicle) / passengers) / 1000 ;
+    let emissions = ((distance * vehicle) / passengers) / 1000 ; //algorithm for CO2 created
     leaderboard.push(emissions);
-    leaderboard.sort();
+    leaderboard.sort((a, b)=> a - b); //sort Array for leaderboard score
     let div = document.createElement('div');
     let textNode = document.createTextNode("You produced " + emissions + "kg of CO2 for this journey");
+    let currentPosition = leaderboard.indexOf(emissions);
+    let leaderNode = document.createTextNode("You are position: " + (currentPosition + 1) + " on our leaderboard");
     div.appendChild(textNode);    
-    formOutput.appendChild(div);
-    return console.table(leaderboard) + console.log(vehicle) ;
+    formOutput.appendChild(div);    
+    formOutput.appendChild(leaderNode);
+    return console.table(leaderboard);
 }
