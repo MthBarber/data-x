@@ -36,10 +36,10 @@ const passengersLabel = document.getElementById('passengersLabel').value;
 const passengers = document.getElementById('passengers').value;
 
 checkbox.addEventListener('change', (e)=>{
-    if (this.checked){
+    if (checkbox.value === "checked"){
         checkbox.value = "unchecked"
         console.log("not checked");
-        passengersLabel.style.display = "flex";
+        
     }else {
         console.log("checked");
         checkbox.value = "checked";
