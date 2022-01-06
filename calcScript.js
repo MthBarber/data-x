@@ -17,6 +17,7 @@ const passengers = document.getElementById('passengers').value;
 
 const calculateFunction = (distance,vehicle,passengers) =>{     
     let formOutput = document.getElementById("formOutput");
+    passengerCheck(passengers); // code to prevent crashing
     let emissions = ((distance * vehicle) / passengers) / 1000 ; //algorithm for CO2 created
     let div = document.createElement('div');
     leaderboard.push(emissions);
@@ -32,30 +33,40 @@ const calculateFunction = (distance,vehicle,passengers) =>{
 
 
 const checkbox = document.getElementById('checkbox');
-const passengersLabel = document.getElementById('passengersLabel').value;
-const passengers = document.getElementById('passengers').value;
+const passengersLabel = document.getElementById('passengersLabel');
+const passengers = document.getElementById('passengers');
 
 checkbox.addEventListener('change', (e)=>{
     if (checkbox.value === "checked"){
-        checkbox.value = "unchecked"
-        console.log("not checked");
+        checkbox.value = "unchecked";
+        passengers.style.display = "none";
+        passengersLabel.style.display = "none";
+        
         
     }else {
-        console.log("checked");
         checkbox.value = "checked";
+        passengers.style.display = "flex";
+        passengersLabel.style.display = "flex";
     }
 });
 
 //Begin code for making switch statement for number of passengers.
 
-switch (passengers) {
-    case NaN:
-        alert("please enter a number.");
-        break;
-    case 0:
-        alert("Please enter a number greater than zero.")
-        break;
-    
+const passengerCheck = (passengers) => {
+    let passengersNum = parseInt(passengers);
+    switch (true) {
+        case passengersNum == NaN:
+            alert("please enter a number.");
+            break;
+        case passengersNum < 0 :            
+            alert("No negatives!");
+            break;
+        case passengersNum == 0:
+            alert("Please enter a number greater than zero.");
+            break;        
+        default:
+            console.log("Nothing happened");
 
+    }
 }
 
