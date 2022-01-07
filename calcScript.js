@@ -19,7 +19,11 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     let formOutput = document.getElementById("formOutput");
     let incorrectPassengers = passengerCheck(passengers); // code to prevent crashing
     if (incorrectPassengers === true){
-        return alert("Please enter a valid number of passengers")
+        return alert("Please enter a valid number of passengers");
+    }
+    let miles = milesCheck(distance);
+    if (miles === true){
+        return alert("Please enter a valid value for miles");
     }
     let emissions = ((distance * vehicle) / passengers) / 1000 ; //algorithm for CO2 created
     let div = document.createElement('div');
@@ -70,3 +74,15 @@ const passengerCheck = (passengers) => {
     }
 }
 
+//check for correct value for miles
+const milesCheck = (distance) => {
+    let milesNum = parseInt(distance);
+    switch (true) {
+        case milesNum == NaN:
+            return true;
+        case milesNum <= 0:
+            return true;
+        default:
+            return false;
+    }
+}
