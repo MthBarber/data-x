@@ -17,7 +17,10 @@ const passengers = document.getElementById('passengers').value;
 
 const calculateFunction = (distance,vehicle,passengers) =>{     
     let formOutput = document.getElementById("formOutput");
-    passengerCheck(passengers); // code to prevent crashing
+    let incorrectPassengers = passengerCheck(passengers); // code to prevent crashing
+    if (incorrectPassengers === true){
+        return alert("Please enter a valid number of passengers")
+    }
     let emissions = ((distance * vehicle) / passengers) / 1000 ; //algorithm for CO2 created
     let div = document.createElement('div');
     leaderboard.push(emissions);
@@ -36,7 +39,7 @@ const checkbox = document.getElementById('checkbox');
 const passengersLabel = document.getElementById('passengersLabel');
 const passengers = document.getElementById('passengers');
 
-checkbox.addEventListener('change', (e)=>{
+checkbox.addEventListener('change', (e)=>{    
     if (checkbox.value === "checked"){
         checkbox.value = "unchecked";
         passengers.style.display = "none";
@@ -55,17 +58,14 @@ checkbox.addEventListener('change', (e)=>{
 const passengerCheck = (passengers) => {
     let passengersNum = parseInt(passengers);
     switch (true) {
-        case passengersNum == NaN:
-            alert("please enter a number.");
-            break;
-        case passengersNum < 0 :            
-            alert("No negatives!");
-            break;
-        case passengersNum == 0:
-            alert("Please enter a number greater than zero.");
-            break;        
-        default:
-            console.log("Nothing happened");
+        case passengersNum == NaN: //Check passengers is a number           
+            return true;
+        case passengersNum < 0:   //checks its not less than 0     
+            return true;            
+        case passengersNum == 0: //checks its not zero to prevent infinity           
+            return true;       
+        default: //function continues as normal           
+            return false;
 
     }
 }
