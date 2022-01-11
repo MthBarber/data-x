@@ -15,7 +15,8 @@ const passengers = document.getElementById('passengers').value;
     
 })
 
-const calculateFunction = (distance,vehicle,passengers) =>{     
+const calculateFunction = (distance,vehicle,passengers) =>{ 
+      
     let formOutput = document.getElementById("formOutput");
     let incorrectPassengers = passengerCheck(passengers); // code to prevent crashing
     if (incorrectPassengers === true){
@@ -24,8 +25,11 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     let miles = milesCheck(distance);
     if (miles === true){
         return alert("Please enter a valid value for miles");
-    }
-    let emissions = ((distance * vehicle) / passengers) / 1000 ; //algorithm for CO2 created
+    } 
+    let passengersNum = parseInt(passengers,10) + 1;
+    console.log(passengersNum);
+    let emissions = Math.round((distance * vehicle) / (passengersNum))/1000; //algorithm for CO2 created
+    
     let div = document.createElement('div');
     leaderboard.push(emissions);
     leaderboard.sort((a, b)=> a - b); //sort Array for leaderboard score    
@@ -66,8 +70,7 @@ const passengerCheck = (passengers) => {
             return true;
         case passengersNum < 0:   //checks its not less than 0     
             return true;            
-        case passengersNum == 0: //checks its not zero to prevent infinity           
-            return true;       
+              
         default: //function continues as normal           
             return false;
 
