@@ -5,6 +5,7 @@ const leaderboard = [];
 //Get calculate button from HTML
 const calculateButton = document.getElementById('submit');
 
+//Function for carbon calculator
 calculateButton.addEventListener("click", (e) => {
     //Get access to values in form
 const distance = document.getElementById('distance').value;
@@ -31,8 +32,7 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     //code to remove text from form output when code is ran to prevent build up
     formOutput.innerHTML = "";
     //+1 added in as dividing by 1 passenger does nothing, when really the footprint is halved
-    let passengersNum = parseInt(passengers,10) + 1; 
-    console.log(passengersNum);
+    let passengersNum = parseInt(passengers,10) + 1;     
     //algorithm for CO2 created
     let emissions = Math.round((distance * vehicle) / (passengersNum))/1000;     
     let div = document.createElement('div');
@@ -48,11 +48,12 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     return console.table(leaderboard);
 }
 
-
+//form elements for hideable passenger section
 const checkbox = document.getElementById('checkbox');
 const passengersLabel = document.getElementById('passengersLabel');
 const passengers = document.getElementById('passengers');
 
+//function for hiding or showing "number of passengers" section
 checkbox.addEventListener('change', (e)=>{    
     if (checkbox.value === "checked"){
         checkbox.value = "unchecked";
