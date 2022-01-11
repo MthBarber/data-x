@@ -15,10 +15,12 @@ const passengers = document.getElementById('passengers').value;
     
 })
 
-const calculateFunction = (distance,vehicle,passengers) =>{ 
-      
+const calculateFunction = (distance,vehicle,passengers) =>{       
     let formOutput = document.getElementById("formOutput");
-    let incorrectPassengers = passengerCheck(passengers); // code to prevent crashing
+    let textNode = "";
+
+    // code to prevent crashing from false inputs
+    let incorrectPassengers = passengerCheck(passengers); 
     if (incorrectPassengers === true){
         return alert("Please enter a valid number of passengers");
     }
@@ -26,14 +28,18 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     if (miles === true){
         return alert("Please enter a valid value for miles");
     } 
-    let passengersNum = parseInt(passengers,10) + 1;
+    //code to remove text from form output when code is ran to prevent build up
+    formOutput.innerHTML = "";
+    //+1 added in as dividing by 1 passenger does nothing, when really the footprint is halved
+    let passengersNum = parseInt(passengers,10) + 1; 
     console.log(passengersNum);
-    let emissions = Math.round((distance * vehicle) / (passengersNum))/1000; //algorithm for CO2 created
-    
+    //algorithm for CO2 created
+    let emissions = Math.round((distance * vehicle) / (passengersNum))/1000;     
     let div = document.createElement('div');
     leaderboard.push(emissions);
-    leaderboard.sort((a, b)=> a - b); //sort Array for leaderboard score    
-    let textNode = document.createTextNode("You produced " + emissions + "kg of CO2 for this journey");
+    //sort Array for leaderboard score 
+    leaderboard.sort((a, b)=> a - b);    
+    textNode = document.createTextNode("You produced " + emissions + "kg of CO2 for this journey");
     let currentPosition = leaderboard.indexOf(emissions);
     let leaderNode = document.createTextNode("You are position: " + (currentPosition + 1) + " on our leaderboard");
     div.appendChild(textNode);    
@@ -89,3 +95,4 @@ const milesCheck = (distance) => {
             return false;
     }
 }
+
