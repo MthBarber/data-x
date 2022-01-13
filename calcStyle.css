@@ -115,11 +115,24 @@ span {
     justify-content: center;
     align-items: center;
     height: 40vh;
-    width: 70vw;
+    width: 65vw;
     margin-top: 1rem;
     color: whitesmoke;
     
     
+}
+
+.middle-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.middle-row img {
+    height: 90%;
+    width: 32vh;
+    margin: auto;
+    border-radius: 10%;
 }
 
 .middle h3 {
