@@ -126,6 +126,7 @@ span {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 3rem;
 }
 
 .middle-row img {
@@ -155,8 +156,8 @@ span {
     /*border: 2px solid yellow; */  
     text-align: start;
     font-size: 1rem;
-    height: 30vh;
-    width: 50%;
+    height: 85%;
+    
 }
 
 label {
