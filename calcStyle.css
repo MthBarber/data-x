@@ -214,6 +214,29 @@ input[type=number] {
     font-size: 1.5rem;
 }
 
+.offset {
+    width: 70vw;
+    height: 14vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid yellow;
+    margin-top: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.offset button {  
+  background-color: green;
+  border: 2px solid black;
+  height: 2rem;
+  width: 4rem; 
+  border-radius: 15%; 
+    
+    
+    
+}
 .footer {
     display: flex;
     flex-direction: column;
