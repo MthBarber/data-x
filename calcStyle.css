@@ -43,6 +43,8 @@ ul {
     margin-top: 1.6rem;
     column-gap: 2rem;
 }
+
+/*navbar*/
 .header li {
     font-family: monospace, monospace;
     font-size: 22px;
@@ -102,12 +104,16 @@ span {
     color: green;
 }
 
+/*text content div*/
 .text-content {
     font-size: 1.2rem;
     width: 60vw;
+    
     margin: auto;
     
 }
+
+/*middle content div*/
 .middle {
     display: flex;
     flex-direction: column;
@@ -121,7 +127,7 @@ span {
     
     
 }
-
+/*image and calculator div*/
 .middle-row {
     display: flex;
     justify-content: space-between;
@@ -129,6 +135,7 @@ span {
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
+/*images beside the calculator*/
 
 .middle-row img {
     height: 90%;
@@ -145,11 +152,8 @@ span {
     margin-bottom: 1rem;
 }
 
-#leaf {
-    width: 1430vw;
-    z-index: -1;
-    opacity: 0.7;
-}
+
+/*carbon calculator form*/
 .middle form {
     display: flex;
     flex-direction: column;
@@ -178,14 +182,14 @@ label {
     
 }
 
-/* Chrome, Safari, Edge, Opera */
+/* Chrome, Safari, Edge, Opera hide arrows on form inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+/* Firefox hide arrows on form inputs*/
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -210,10 +214,12 @@ input[type=number] {
 
 #formOutput {
     color: whitesmoke;
-    margin-top: 5rem;;
+    margin-top: 5rem;    
     font-size: 1.5rem;
-    height: 5rem;
+    height: 4rem;
+    width: 40rem;
     border: 1px solid whitesmoke;
+    text-align: center;
 }
 
 .offset {
