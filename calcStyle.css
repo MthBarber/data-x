@@ -210,29 +210,33 @@ input[type=number] {
 
 #formOutput {
     color: whitesmoke;
-    margin-top: 1rem;
+    margin-top: 5rem;;
     font-size: 1.5rem;
+    height: 5rem;
+    border: 1px solid whitesmoke;
 }
 
 .offset {
-    width: 70vw;
+    width: 100vw;
     height: 14vh;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid yellow;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     margin-top: 2.5rem;
     margin-bottom: 0.2rem;
 }
 
 .offset button {  
   background-color: green;
-  border: 2px solid black;
-  height: 2rem;
-  width: 4rem; 
-  border-radius: 15%; 
+  color: whitesmoke;
+  border: 0.15rem solid black;
+  height: 3rem;
+  width: 10rem; 
+  
     
     
     
