@@ -323,6 +323,7 @@ input[type=number] {
 
 /*media queries*/
 
+/*laptop*/
 @media(max-width: 1366px){
 
     .text-content{
@@ -334,6 +335,7 @@ input[type=number] {
 
     .middle {
         width:100%;
+        margin-top: 3rem;
         margin-bottom: 3rem;
     }
 
@@ -349,7 +351,7 @@ input[type=number] {
     }
 
     .middle form {
-        height: 70vh;
+        height: 65vh;
     }
 
     .offset {
@@ -363,40 +365,117 @@ input[type=number] {
         min-height: 123px;
     }
 }
-
+/*tablet*/
 @media(max-width: 768px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100%;
+        max-width:100%;
+        overflow: scroll;
+    }
+
+    
+    .container {
+        
+        width: 100vw;
+        justify-content: center;
+    }
+
+    
     .header img {
         display: hidden;
 
     }
 
-    header li {
-        font-size: 0.7rem;
-    }
-
+    
     .top {
         margin-bottom: 15rem;
     }
 
     .middle {
-        height: 50vh;
-        margin-bottom: 4rem;
+        justify-content: center;
+        height: 40vh;
+        margin-bottom: 5rem;
     }
+
+    .form{
+        height: 120px;
+        
+    }
+
+    
 
     .middle-row img{ 
         display:none;
     }
 
-    .middle-row form {
-        min-height: 80vh;
-    }
+    
 
-    .formOutput {
-        width: 60vw;
-        font-size: 10px;
+    #formOutput {
+        font-size: 1rem;
+        min-height: 3rem;
+        width: 50%;
     }
 
     .footer {
         height: 120px;
+        width: 100%;
+    }
+}
+
+/*small phone*/
+@media(max-width:320px){
+    body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top {
+        width: 100%;
+        padding-bottom: 6rem;
+    }
+
+    .text-content{
+        width: 100%;
+    }
+    .middle {
+        height: 33%;
+    }
+
+    #formOutput {
+        min-width: 90%;
+    }
+
+    .offset {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6rem;
+    }
+
+    .carShare{
+        width: 100%;
+        height:7rem;
+        border: 1px solid whitesmoke;
+    }
+
+    .plantTrees{
+        width: 100%;
+        height:7rem;
+        border: 1px solid whitesmoke;
+    }
+
+    .footer {
+        min-width: 100%;
     }
 }
