@@ -213,10 +213,12 @@ input[type=number] {
 #submit {
     width: 4rem;
     height: 4rem;
+    color: whitesmoke;
     margin-top: 1rem;
+    border: none;
     border-radius: 50%;
     background-color: green;
-    box-shadow: 1px 1px rgb(0, 0, 0);
+    
 
 }
 
@@ -321,6 +323,80 @@ input[type=number] {
 
 /*media queries*/
 
-@media(max-width: 768px){
+@media(max-width: 1366px){
 
+    .text-content{
+        font-size: 1.1rem;
+    }
+    .top {
+        margin-bottom: 10rem;
+    }
+
+    .middle {
+        width:100%;
+        margin-bottom: 3rem;
+    }
+
+    .middle-row {
+        min-height: 70vh;
+        width: 100%;
+        justify-content: space-evenly;
+        
+    }
+
+    .middle-row img{
+        width: 90%;
+    }
+
+    .middle form {
+        height: 70vh;
+    }
+
+    .offset {
+        min-height:150px;
+       
+        
+        
+    }
+
+    .footer {
+        min-height: 123px;
+    }
+}
+
+@media(max-width: 768px){
+    .header img {
+        display: hidden;
+
+    }
+
+    header li {
+        font-size: 0.7rem;
+    }
+
+    .top {
+        margin-bottom: 15rem;
+    }
+
+    .middle {
+        height: 50vh;
+        margin-bottom: 4rem;
+    }
+
+    .middle-row img{ 
+        display:none;
+    }
+
+    .middle-row form {
+        min-height: 80vh;
+    }
+
+    .formOutput {
+        width: 60vw;
+        font-size: 10px;
+    }
+
+    .footer {
+        height: 120px;
+    }
 }
