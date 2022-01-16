@@ -240,7 +240,7 @@ input[type=number] {
     display: flex;    
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid whitesmoke;
+   
     
     margin-top: 2.5rem;
     margin-bottom: 0.2rem;
@@ -374,6 +374,9 @@ input[type=number] {
     }
 
     body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 100%;
         max-width:100%;
         overflow: scroll;
@@ -400,11 +403,13 @@ input[type=number] {
     .middle {
         justify-content: center;
         height: 40vh;
+        margin-top: 5rem;
         margin-bottom: 5rem;
     }
 
     .form{
-        height: 120px;
+        height: 180px;
+        font-size: 1rem;
         
     }
 
@@ -417,8 +422,8 @@ input[type=number] {
     
 
     #formOutput {
-        font-size: 1rem;
-        min-height: 3rem;
+        font-size: 0.85rem;
+        min-height: 2.8rem;
         width: 50%;
     }
 
@@ -437,10 +442,12 @@ input[type=number] {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     .top {
         width: 100%;
         padding-bottom: 6rem;
+        align-items: center;
     }
 
     .text-content{
@@ -448,6 +455,11 @@ input[type=number] {
     }
     .middle {
         height: 33%;
+        align-items: center;
+    }
+
+    .middle-row {
+        width: 900%;
     }
 
     #formOutput {
@@ -461,6 +473,7 @@ input[type=number] {
         justify-content: center;
         align-items: center;
         margin-bottom: 6rem;
+        border-top: none;
     }
 
     .carShare{
