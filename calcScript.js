@@ -42,7 +42,8 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     textNode = document.createTextNode("You produced " + emissions + "kg of CO2 for this journey");
     let currentPosition = leaderboard.indexOf(emissions);
     let leaderNode = document.createTextNode("You are position: " + (currentPosition + 1) + " on our leaderboard");
-    div.appendChild(textNode);    
+    div.appendChild(textNode);     
+    div.appendChild(leaderNode)    
     formOutput.appendChild(div);    
     formOutput.appendChild(leaderNode);
     return console.table(leaderboard);
