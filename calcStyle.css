@@ -383,15 +383,32 @@ input[type=number] {
 
     
     .container {
-        
-        width: 100vw;
+        height: 100%;
+        max-width: 100%;
         justify-content: center;
     }
+    header{
+        max-width: 90%;
+    }
+    nav{
+        max-width: 90%;
+    }
 
+    nav a{
+        max-width: 90%;
+        font-size: 0.8rem;
+    }
     
-    .header img {
-        display: hidden;
+    ul {
+        margin-left: 2rem;
+    }
 
+    #dataXLogo {
+        margin: 0;
+    }
+
+    #challengeLogo {
+        display: none;
     }
 
     
@@ -399,6 +416,9 @@ input[type=number] {
         margin-bottom: 15rem;
     }
 
+    .text-content{
+        max-width: 90%;
+    }
     .middle {
         justify-content: center;
         height: 40vh;
