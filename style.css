@@ -631,6 +631,18 @@ p,
 	background-size: cover;
 }
 
+.simulator {
+	height: 100vh;
+	background: var(--clr-black);
+	background-image: linear-gradient(
+			hsl(var(--clr-black) / 0.8),
+			hsl(var(--clr-black) / 0.8)
+		),
+		url(./images/circuit-board.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 /* /////////////////////////////////////////////////// */
 
 .simulator1 {
