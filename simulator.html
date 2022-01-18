@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Data-X Website</title>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="simulator">
+			<a class="skip-to-content" href="#main">skip to content</a>
+			<header class="primary-header section-wrap">
+				<div class="primary-header-layout">
+					<button
+						class="mobile-nav-toggle"
+						aria-controls="primary-navigation"
+						aria-expanded="false"
+					>
+						<span class="sr-only">Menu</span>
+					</button>
+					<img class="logo" src="images/data-x-logo.png" alt="logo" />
+					<img class="challenge" src="images/data-x-100toZERO.png" alt="logo" />
+					<nav>
+						<ul
+							id="primary-navigation"
+							data-visible="false"
+							class="primary-navigation"
+						>
+							<li class="active nav-item fs-nav nav-item1">
+								<a class="text-dark letter-space-2 uppercase" href="#">home</a>
+							</li>
+							<li class="nav-item fs-nav">
+								<a class="text-dark letter-space-2 uppercase" href="#">Calculator</a>
+							</li>
+							<li class="nav-item fs-nav">
+								<a class="text-dark letter-space-2 uppercase" href=".#"
+									>Simulator</a
+								>
+							</li>
+							<li class="nav-item fs-nav">
+								<a class="text-dark letter-space-2" href="#">100-to-0 APP</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main id="main">
+				<section class="simulator1 section-wrap">
+					<div class="simulator1-layout">
+						<div class="sim-heading"><h3>Car Share CO2 Simulator</h3></div>
+						<div class="img-wrap-01 bg-white">
+							<img
+								class="city"
+								src="images/icon-city-lights.png"
+								alt="city silhouette"
+							/>
+						</div>
+						<div class="info-text">
+							<p>It takes 10 trees <span class="years fs-5">0</span> years to remove <span class="kgs fs-5">200</span> kg/co2</p>
+						</div>
+						<div class="trees-wrap">
+							<img
+								class="trees"
+								src="images/icon-trees.png"
+								alt="10 green trees"
+							/>
+						</div>
+						<div class="buttons-01">
+							
+							<button id="btn-01" class="btn">
+								<p>1000 miles</p>
+							</button>
+							<button id="btn-reset" class="btn bg-light">
+								<p>reset</p>
+								</button>
+							<button id="btn-02" class="btn">
+								<p>10,000 miles</p>
+							</button>
+						</div>
+						<div class="buttons-02">
+							<button id="btn-03" class="btn">
+								<p>2 people in 1 car</p>
+							</button>
+							<button id="btn-04" class="btn">
+								<p>2 people in 2 cars</p>
+							</button>
+						</div>
+					</div>
+				</section>
+			</main>
+		
+	</body>
+</html>

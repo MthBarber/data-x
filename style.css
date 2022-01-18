@@ -630,3 +630,45 @@ p,
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+/* /////////////////////////////////////////////////// */
+
+.simulator1 {
+	grid-template-rows: minmax(85vh, auto);
+	margin-top: 1vh;
+	place-items: center;
+	text-align: center;
+}
+
+.btn {
+	margin-top: 3vh;
+}
+
+.img-wrap-01 {
+	display: flex;
+	justify-content: center;
+	max-height: 40vh;
+	width: 100%;
+}
+
+.info-text {
+	display: none;
+	text-align: center;
+}
+.trees-wrap {
+	display: none;
+	max-height: 20vh;
+	width: 100%;
+}
+
+.buttons-01 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 5vw;
+}
+
+.buttons-02 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 5vw;
+}
