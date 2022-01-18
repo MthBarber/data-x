@@ -86,11 +86,11 @@ btnReset.addEventListener('click', () => {
 		btn04.style.background = 'white';
 		btnResetToggle = false;
 		setTimeout(() => {
-			btnReset.style.background = 'lightblue';
+			btnReset.style.background = 'blue';
 		}, 1000);
 		btnResetToggle = true;
 	} else {
-		btnReset.style.background = 'lightblue';
+		btnReset.style.background = 'blue';
 		btnResetToggle = true;
 	}
 	console.log(control);
