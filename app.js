@@ -79,18 +79,18 @@ btnReset.addEventListener('click', () => {
 	setControl();
 	displayTreesAndInfo();
 	if (btnResetToggle === true) {
-		btnReset.style.background = 'red';
+		btnReset.style.background = 'orange';
 		btn01.style.background = 'white';
 		btn02.style.background = 'white';
 		btn03.style.background = 'white';
 		btn04.style.background = 'white';
 		btnResetToggle = false;
 		setTimeout(() => {
-			btnReset.style.background = 'hsl(var(--clr-light))';
+			btnReset.style.background = 'lightblue';
 		}, 1000);
 		btnResetToggle = true;
 	} else {
-		btnReset.style.background = 'white';
+		btnReset.style.background = 'lightblue';
 		btnResetToggle = true;
 	}
 	console.log(control);
