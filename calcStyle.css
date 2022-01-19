@@ -393,18 +393,19 @@ input[type=number] {
        
     }
     nav{
-        max-width: 90%;
-        justify-content: center;
+        max-width: 90%;        
         margin-bottom: 1.5rem;
     }
 
     nav a{
-        max-width: 90%;
+        max-width: 95%;
         font-size: 0.8rem;
     }
     
     ul {
-        margin-left: 2rem;
+        justify-content: center;
+        margin: 1.5rem 3rem 1.5rem 3rem;
+        
     }
 
     #dataXLogo {
