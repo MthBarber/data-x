@@ -548,6 +548,9 @@ input[type=number] {
     .container {
         height: 100%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -576,10 +579,12 @@ input[type=number] {
         margin-bottom: -12rem;
     }
 
-    
+    .middle-row {
+        max-width: 90%;
+    }
 
    form{
-       max-width: 90%;
+       max-width: 318px;
        font-size: 0.6rem;
        max-height: 27rem;
        margin: auto;
@@ -587,10 +592,11 @@ input[type=number] {
 
     #formOutput {
         min-width: 90%;
+        max-width: 90%;
     }
 
     .offset {
-        width: 90%;
+        max-width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -600,18 +606,18 @@ input[type=number] {
     }
 
     .carShare{
-        width: 100%;
+        width: 85%;
         height:9rem;
         border: 1px solid whitesmoke;
     }
 
     .plantTrees{
-        width: 100%;
+        width: 85%;
         height:9rem;
         border: 1px solid whitesmoke;
     }
 
     .footer {
-        width: 100%;
+        min-width: 101%;
     }
 }
