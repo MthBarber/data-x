@@ -25,6 +25,8 @@ const calculateFunction = (distance,vehicle,passengers) =>{
     if (incorrectPassengers === true){
         return alert("Please enter a valid number of passengers");
     }
+
+    //Checks miles is less than 0
     let miles = milesCheck(distance);
     if (miles === true){
         return alert("Please enter a valid value for miles");
@@ -92,7 +94,7 @@ const milesCheck = (distance) => {
         case milesNum == NaN:
             return true;
         case milesNum <= 0:
-            return true;
+            return true;        
         default:
             return false;
     }
