@@ -1,5 +1,5 @@
 //Make array to store values to make a leaderboard
-const leaderboard = [];
+const leaderboard = [10,35,50,15,9];
 
 
 //Get calculate button from HTML
