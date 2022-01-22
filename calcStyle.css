@@ -42,7 +42,7 @@ ul {
     justify-content: space-between;
     margin-left: 7rem;
     margin-right: 7rem;
-    margin-top: 1.6rem;
+    margin-top: 0.5rem;
     column-gap: 2rem;
 }
 
@@ -127,8 +127,8 @@ span {
    /* border: 2px solid hotpink;*/
     justify-content: center;
     align-items: center;
-    height: 45vh;
-    width: 75vw;
+    height: 50vh;
+    width: 100vw;
     margin-top: 1rem;
     color: whitesmoke;
     
@@ -138,7 +138,7 @@ span {
 .middle-row {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 75%;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
