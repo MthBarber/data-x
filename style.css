@@ -422,6 +422,7 @@ p,
 	background-color: var(--clr-dark);
 	border-radius: 5px;
 	color: var(--clr-light);
+	text-shadow: none;
 }
 
 .primary-navigation .active,
@@ -602,6 +603,12 @@ p,
 	margin-top: 6vh;
 }
 
+.section4 h2 {
+	align-self: end;
+	text-align: center;
+	margin-top: 6vh;
+}
+
 @media (min-width: 720px) {
 	.section3 {
 		grid-template-rows: minmax(30vh, auto);
@@ -652,11 +659,23 @@ p,
 	background-size: cover;
 }
 
-.section3 {
+.section2 {
 	background: var(--clr-dark);
 	background-image: linear-gradient(
 			hsl(var(--clr-black) / 0.5),
 			hsl(var(--clr-black) / 0.9)
+		),
+		url(./images/glass-wall.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section3 {
+	background: var(--clr-dark);
+	background-image: linear-gradient(
+			hsl(var(--clr-white) / 0.5),
+			hsl(var(--clr-white) / 0.9)
 		),
 		url(./images/global-lights.jpg);
 	background-position: center;
@@ -664,7 +683,7 @@ p,
 	background-size: cover;
 }
 
-.knowledge {
+.section4 {
 	background: var(--clr-dark);
 	background-image: linear-gradient(
 			hsl(var(--clr-black) / 0.4),
