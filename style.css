@@ -645,7 +645,8 @@ p,
 }
 /* /////////////////////////////////////////////////// */
 
-.simulator1 {
+.simulator1,
+.one-hundred {
 	grid-template-rows: minmax(85vh, auto);
 	margin-top: 1vh;
 	place-items: center;
