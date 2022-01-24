@@ -613,10 +613,11 @@ p,
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	border-top: 1px solid grey;
 }
 
 .socials {
-	gap: 1vw;
+	gap: 6vw;
 	justify-self: center;
 	align-items: center;
 	text-align: center;
@@ -676,6 +677,7 @@ p,
 	margin-top: 1vh;
 	place-items: center;
 	text-align: center;
+	padding-bottom: 30vh;
 }
 
 .btn {
