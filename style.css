@@ -625,17 +625,17 @@ p,
 
 .link-icon {
 	cursor: pointer;
-	width: 60px;
+	width: 50px;
 }
 /* BACKGROUND IMAGES */
 
 .home {
 	background: var(--clr-dark);
 	background-image: linear-gradient(
-			hsl(var(--clr-black) / 0.8),
-			hsl(var(--clr-black) / 0.8)
+			hsl(var(--clr-black) / 0.5),
+			hsl(var(--clr-black) / 0.5)
 		),
-		url(./images/circuit-board.jpg);
+		url(./images/data-woosh.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -657,10 +657,10 @@ p,
 	height: 100vh;
 	background: var(--clr-black);
 	background-image: linear-gradient(
-			hsl(var(--clr-black) / 0.8),
-			hsl(var(--clr-black) / 0.8)
+			hsl(var(--clr-black) / 0.3),
+			hsl(var(--clr-black) / 0.3)
 		),
-		url(./images/circuit-board.jpg);
+		url(./images/data-woosh.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -671,11 +671,27 @@ p,
 }
 /* /////////////////////////////////////////////////// */
 
-.simulator1,
-.one-hundred {
+.simulator1 {
 	grid-template-rows: minmax(85vh, auto);
-	margin-top: 1vh;
-	place-items: center;
+	margin-top: 3vh;
+	justify-items: center;
+	align-items: start;
+	text-align: center;
+}
+
+.one-hundred {
+	grid-template-rows: minmax(100vh, auto);
+	margin-top: 3vh;
+	justify-content: center;
+	align-items: start;
+	text-align: center;
+}
+
+.car-share-vid {
+	grid-template-rows: minmax(50vh, auto);
+	margin-top: 6vh;
+	justify-content: center;
+	align-items: start;
 	text-align: center;
 }
 
@@ -713,4 +729,13 @@ p,
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 5vw;
+}
+
+.app-vid {
+	height: 80vh;
+	max-width: 90vw;
+}
+
+.car-vid {
+	width: 90vw;
 }
