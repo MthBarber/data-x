@@ -513,7 +513,7 @@ p,
 /* //////////////////////////////////////////////////////////////////////// */
 
 .section1 {
-	grid-template-rows: minmax(100vh, auto);
+	grid-template-rows: minmax(75vh, auto);
 	text-align: center;
 	margin-top: 20vh;
 }
@@ -612,6 +612,10 @@ p,
 	}
 }
 
+.knowledge {
+	text-shadow: 3px 3px 5px black, -3px -3px 5px black;
+}
+
 .footer-layout {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -655,6 +659,18 @@ p,
 			hsl(var(--clr-black) / 0.9)
 		),
 		url(./images/global-lights.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.knowledge {
+	background: var(--clr-dark);
+	background-image: linear-gradient(
+			hsl(var(--clr-black) / 0.4),
+			hsl(var(--clr-black) / 0.9)
+		),
+		url(./images/circuit-board.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
