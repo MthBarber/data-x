@@ -409,6 +409,7 @@ p,
 	border-bottom: 0.4vh solid hsl(var(--clr-white) / 0);
 	text-align: center;
 	padding: 1.4vh clamp(0.5rem, 1.8vw, 4.5rem) 1vh;
+	text-shadow: 3px 3px 5px var(--clr-dark), -3px -3px 5px var(--clr-dark);
 }
 
 .nav-item > a {
@@ -513,9 +514,8 @@ p,
 
 .section1 {
 	grid-template-rows: minmax(100vh, auto);
-
-	place-items: center;
 	text-align: center;
+	margin-top: 20vh;
 }
 
 .sect1-sub {
@@ -526,6 +526,13 @@ p,
 	text-decoration: none;
 }
 
+.hero-info {
+	background: linear-gradient(
+		hsl(var(--clr-black) / 0.2),
+		hsl(var(--clr-black) / 0.4)
+	);
+	text-shadow: 3px 3px 5px var(--clr-dark), -3px -3px 5px var(--clr-dark);
+}
 /* ///////////////////////////////////////////////////////////////////// */
 
 .section2 {
