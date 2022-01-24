@@ -605,6 +605,26 @@ p,
 	}
 }
 
+.footer-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.socials {
+	gap: 1vw;
+	justify-self: center;
+	align-items: center;
+	text-align: center;
+}
+
+.link-icon {
+	cursor: pointer;
+	width: 60px;
+}
 /* BACKGROUND IMAGES */
 
 .home {
@@ -642,6 +662,10 @@ p,
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.footer {
+	background: black;
 }
 /* /////////////////////////////////////////////////// */
 
