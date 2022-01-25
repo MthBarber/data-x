@@ -38,22 +38,22 @@ const setControl = function () {
 	if (milesCtrl === 1 && carCtrl === 1) {
 		control = 1;
 		img01.src = 'images/icon-city-fog-30.png';
-		years.innerHTML = '1';
+		years.innerHTML = '1 year ';
 		kgs.innerHTML = '200';
 	} else if (milesCtrl === 1 && carCtrl === 2) {
 		control = 2;
 		img01.src = 'images/icon-city-fog-50.png';
-		years.innerHTML = '2';
+		years.innerHTML = '2 years ';
 		kgs.innerHTML = '400';
 	} else if (milesCtrl === 2 && carCtrl === 1) {
 		control = 3;
 		img01.src = 'images/icon-city-fog-65.png';
-		years.innerHTML = '10';
+		years.innerHTML = '10 years ';
 		kgs.innerHTML = '2000';
 	} else if (milesCtrl === 2 && carCtrl === 2) {
 		control = 4;
 		img01.src = 'images/icon-city-fog-95.png';
-		years.innerHTML = '20';
+		years.innerHTML = '20 years ';
 		kgs.innerHTML = '4000';
 	} else {
 		control = 0;
