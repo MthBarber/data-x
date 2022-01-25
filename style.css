@@ -822,4 +822,8 @@ p,
 	width: 60vw;
 	max-height: 80vh;
 	border: 2px solid var(--clr-light);
+	background-image: url(./images/car-share-difference.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
