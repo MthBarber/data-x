@@ -812,6 +812,10 @@ p,
 	height: 80vh;
 	max-width: 90vw;
 	border: 2px solid var(--clr-light);
+	background-image: url(./images/circuit-board.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .car-vid {
