@@ -809,7 +809,7 @@ p,
 }
 
 .app-vid {
-	height: 80vh;
+	height: 75vh;
 	max-width: 90vw;
 	border: 2px solid var(--clr-light);
 	background-image: url(./images/data-x-app.png);
@@ -826,4 +826,14 @@ p,
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.call-action-1-btn {
+	background-color: hsl(var(--clr-black) / 0.5);
+	border: 0.1rem solid hsl(var(--clr-white));
+	border-radius: 3rem;
+	cursor: pointer;
+	padding: 1rem 1rem 1rem;
+	text-decoration: none;
+	white-space: nowrap;
 }
