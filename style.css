@@ -847,4 +847,5 @@ p,
 	object-fit: cover;
 	filter: opacity(50%);
 	border-radius: 5px;
+	border: 2px solid black;
 }
