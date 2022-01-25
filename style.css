@@ -731,7 +731,7 @@ p,
 }
 
 .car-share-vid {
-	height: 100vh;
+	height: auto;
 	background: var(--clr-black);
 	background-image: linear-gradient(
 			hsl(var(--clr-black) / 0.8),
@@ -749,7 +749,7 @@ p,
 /* /////////////////////////////////////////////////// */
 
 .simulator1 {
-	grid-template-rows: minmax(85vh, auto);
+	grid-template-rows: minmax(50vh, auto);
 	margin-top: 3vh;
 	justify-items: center;
 	align-items: start;
@@ -765,7 +765,7 @@ p,
 }
 
 .car-share-vid {
-	grid-template-rows: minmax(50vh, auto);
+	grid-template-rows: auto;
 	/* margin-top: 6vh; */
 	justify-items: center;
 	align-items: start;
@@ -812,14 +812,14 @@ p,
 	height: 80vh;
 	max-width: 90vw;
 	border: 2px solid var(--clr-light);
-	background-image: url(./images/circuit-board.jpg);
+	background-image: url(./images/data-x-app.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .car-vid {
-	width: 50vw;
+	width: 60vw;
 	max-height: 80vh;
 	border: 2px solid var(--clr-light);
 }
