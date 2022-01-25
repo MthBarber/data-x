@@ -653,6 +653,8 @@ p,
 .link-icon {
 	cursor: pointer;
 	width: 50px;
+	border: 2px solid white;
+	border-radius: 13px;
 }
 /* BACKGROUND IMAGES */
 
