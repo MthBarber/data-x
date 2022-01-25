@@ -730,6 +730,19 @@ p,
 	background-size: cover;
 }
 
+.car-share-vid {
+	height: 100vh;
+	background: var(--clr-black);
+	background-image: linear-gradient(
+			hsl(var(--clr-black) / 0.8),
+			hsl(var(--clr-black) / 0.6)
+		),
+		url(./images/circuit-board.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .footer {
 	background: black;
 }
@@ -753,8 +766,8 @@ p,
 
 .car-share-vid {
 	grid-template-rows: minmax(50vh, auto);
-	margin-top: 6vh;
-	justify-content: center;
+	/* margin-top: 6vh; */
+	justify-items: center;
 	align-items: start;
 	text-align: center;
 }
@@ -802,5 +815,7 @@ p,
 }
 
 .car-vid {
-	width: 90vw;
+	width: 50vw;
+	max-height: 80vh;
+	border: 2px solid var(--clr-light);
 }
